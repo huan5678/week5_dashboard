@@ -1,0 +1,27 @@
+.table-hover>tbody>tr:hover{
+  --bs-table-accent-bg: #F8F9FA;
+}
+
+.page-link{
+  color: $main;
+  border: 1px solid $main;
+  &:hover{
+    color:$main;
+    border: 1px solid $main;
+  }
+  &:focus{
+    color:$main;
+  }
+}
+.page-item.active .page-link{
+  background-color: $main;
+  border-color: $main;
+}
+
+.img{
+  &--userDetial{
+    object-fit: cover;
+    max-width: 141px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,59 @@
+.container--comment {
+  max-width: 488px;
+}
+
+@each $dp in $displayVal {
+  .d-#{$dp} {
+      display: #{$dp};
+  }
+}
+
+@each $flex in $flex-directionVal {
+  .flex-#{$flex} {
+      flex-direction: $flex;
+  }
+}
+
+@each $flex in $wrapVal {
+  .flex-#{$flex} {
+      flex-wrap: $flex;
+  }
+}
+
+@each $jc, $val in $justify-contentVal {
+  .justify-#{$jc} {
+      justify-content: #{$val};
+  }
+}
+
+@each $its, $val in $itemsVal {
+  .items-#{$its} {
+      align-items: #{$val};
+  }
+}
+
+@each $ag in $alignVal {
+  .align-#{$ag} {
+      vertical-align: $ag;
+  }
+}
+
+
+
+@each  $space, $spaceamount in $spacers {
+  .gap-#{$space} {
+    gap: #{$spaceamount} !important;
+  }
+}
+
+@each  $space, $spaceamount in $spacers {
+  .row-gap-#{$space} {
+    row-gap: #{$spaceamount} !important;
+  }
+}
+
+@each  $space, $spaceamount in $spacers {
+  .column-gap-#{$space} {
+    column-gap: #{$spaceamount} !important;
+  }
+}

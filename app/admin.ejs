@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+  <main class="d-flex">
+    <section class="sidebar d-flex flex-column justify-content-between bg-gray-100">
+      <div>
+        <figure class="p-4 pos-relative">
+          <a href="/" class="link--block">
+          <img src="./assets/images/logo-ANSWER.svg" height="40" alt="Logo" />
+          </a>
+        </figure>
+        <nav>
+          <ul class="list-unstyled">
+            <li class="pos-relative mb-3 bg-gray-400-hover">
+              <a href="#" class="link link--block d-flex justify-content-start align-items-center">
+                <span class="ml-4 material-icons p-1 mr-2 text-gray-900">assessment</span>
+                <span class="fw-bold align-middle text-gray-900">Dashboard</span>
+              </a>
+            </li>
+            <li class="pos-relative mb-3 bg-gray-400-hover">
+              <a href="#" class="link link--block d-flex justify-content-start align-items-center">
+                <span class="ml-4 material-icons p-1 mr-2 text-gray-900">question_answer</span>
+                <span class="fw-bold align-middle text-gray-900">Question</span>
+              </a>
+            </li>
+            <li class="pos-relative mb-3 bg-gray-400-hover">
+              <a href="index.html" class="link link--block d-flex justify-content-start align-items-center">
+                <span class="ml-4 material-icons p-1 mr-2 text-gray-900">assignment</span>
+                <span class="fw-bold align-middle text-gray-900">Assignment</span>
+              </a>
+            </li>
+            <li class="pos-relative mb-3 bg-gray-400-hover">
+              <a href="#" class="link link--block d-flex justify-content-start align-items-center">
+                <span class="ml-4 material-icons p-1 mr-2 text-gray-900">video_library</span>
+                <span class="fw-bold align-middle text-gray-900">Course</span>
+              </a>
+            </li>
+            <li class="pos-relative mb-3 bg-gray-400-hover">
+              <a href="admin.html" class="link link--block d-flex justify-content-start align-items-center">
+                <span class="ml-4 material-icons p-1 mr-2 text-success">supervisor_account</span>
+                <span class="fw-bold align-middle activated text-success">Admin</span>
+              </a>
+            </li>
+            <li class="pos-relative mb-3 bg-gray-400-hover">
+              <a href="#" class="link link--block d-flex justify-content-start align-items-center">
+                <span class="ml-4 material-icons p-1 mr-2 text-gray-900">settings</span>
+                <span class="fw-bold align-middle text-gray-900">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-flex justify-content-start align-items-center p-4">
+        <img src="./assets/images/andychen.jpeg" class="rounded-circle avatar mr-2" alt="avatarImage" />
+        <div>
+          <h2 class="fw-bold fs-bs">
+            Andy Chen
+          <span class="d-block fs-3 text-gray-600">andy0401@mail.com</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="content flex-full">
+        <%- contents %>
+    </section>
+  </main>
+
+  
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

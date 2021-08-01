@@ -1,0 +1,135 @@
+@use "sass:math";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap');
+
+$font-family-sans-serif: 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: 'Roboto Mono', monospace;
+
+$base: 16;
+
+$main: #198754;
+$gray-100:  #F8F9FA;
+$gray-400:  #CED4DA;
+$gray-600:  #6C757D;
+$gray-900:  #212529;
+
+$grays: (
+  "100": $gray-100,
+  "400": $gray-400,
+  "600": $gray-600,
+  "900": $gray-900
+)!default;
+
+$themes: (
+  success: $main,
+)!default;
+
+$borderLoc:(null, top, right, bottom, left) !default;
+
+$borderSize:(
+  0: 0px,
+  null: 1px,
+  1: 4px,
+  2: 8px,
+  3: 3px,
+) !default;
+
+
+$gutter-width: 30px !default;
+$grid-num: 12 !default;
+$grid-sm-num: 4!default;
+
+$spacer: 1rem !default;
+$spacers: (
+  0:  0,
+  0\.5: (4/$base)*$spacer,
+  1:  (8/$base)*$spacer, 
+  1\.5:  (12/$base)*$spacer,
+  2:  (16/$base)*$spacer, 
+  2\.5: (20/$base)*$spacer,
+  3:  (24/$base)*$spacer, 
+  3\.5:  (28/$base)*$spacer,
+  4:  (32/$base)*$spacer, 
+  4\.5:  (36/$base)*$spacer,
+  5:  (40/$base)*$spacer, 
+  6:  (48/$base)*$spacer, 
+  7:  (56/$base)*$spacer, 
+  7\.5:  (60/$base)*$spacer,
+  8:  (64/$base)*$spacer, 
+  9:  (72/$base)*$spacer, 
+  10: (80/$base)*$spacer, 
+  11: (88/$base)*$spacer, 
+  12: (96/$base)*$spacer,
+  auto: auto
+) !default;
+
+$sides: (
+    '': null,
+    't': top,
+    'b': bottom,
+    'l': left,
+    'r': right
+    ) !default;
+
+$floatVal: (left, right, none,) !default;
+
+$flex-directionVal: (row, column, row-reverse, column-reverse) !default;
+
+$wrapVal: (wrap, nowrap, wrap-reverse) !default;
+
+$justify-contentVal: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    between: space-between,
+    around: space-around,
+    evenly: space-evenly,
+) !default;
+
+$displayVal: (flex, block, inline, inline-block, none) !default;
+
+$itemsVal: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    baseline: baseline,
+    stretch: stretch,
+) !default;
+
+$alignVal: (baseline, top, middle, bottom, text-bottom, text-top) !default;
+
+$widthVal: (
+  20: 20%,
+  25: 25%,
+  30: 30%,
+  35: 35%,
+  40: 40%,
+  50: 50%,
+  60: 60%,
+  70: 70%,
+  75: 75%,
+  80: 80%,
+  100: 100%,
+  auto: auto
+) !default;
+
+$sizer: 1rem !default;
+$sizes: (
+  bs: $sizer,
+  1:  (24/$base)*$sizer,
+  2:  (20/$base)*$sizer,
+  3:  (14/$base)*$sizer,
+  4:  (12/$base)*$sizer,
+) !default;
+
+$weightVal: (
+  base: 400,
+  bold: 700,
+) !default;
+
+$pos: (static, relative, absolute, fixed, sticky) !default;
+
+$textAlign: (left, center, right, justify) !default;
+
+$whiteSpace: (normal, nowrap, pre, pre-line, pre-wrap) !default;
+
+

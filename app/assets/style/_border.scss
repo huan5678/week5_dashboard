@@ -1,0 +1,102 @@
+@each $border,
+$color in $border-color {
+	.border-#{$border} {
+		border-color: #{$color};
+	}
+
+	;
+}
+
+@each $loc in $borderLoc {
+	@each $size, $val in $borderSize {
+		@if $loc != null {
+			@if $size != null{
+				.border-#{$loc}-#{$size} {
+					border-style: solid;
+					border-#{$loc}-width: #{$val};
+				}
+			} @else {
+				.border-#{$loc}{
+					border-style: solid;
+					border-#{$loc}-width: #{$val};
+				}
+			}
+		} @else {
+			@if $size != null {
+				.border-#{$size}{
+					border-style: solid;
+					border-width: #{$val};
+				}
+			} @else {
+				.border{
+					border-style: solid;
+					border-width: #{$val};
+				}
+			}
+		}
+	}
+}
+
+@include pad {
+	@each $loc in $borderLoc {
+		@each $size, $val in $borderSize {
+			@if $loc != null {
+				@if $size != null{
+					.border-md-#{$loc}-#{$size} {
+						border-style: solid;
+						border-#{$loc}-width: #{$val};
+					}
+				} @else {
+					.border-md-#{$loc}{
+						border-style: solid;
+						border-#{$loc}-width: #{$val};
+					}
+				}
+			} @else {
+				@if $size != null {
+					.border-md-#{$size}{
+						border-style: solid;
+						border-width: #{$val};
+					}
+				} @else {
+					.border-md{
+						border-style: solid;
+						border-width: #{$val};
+					}
+				}
+			}
+		}
+	}
+}
+
+@include mobile{
+	@each $loc in $borderLoc {
+		@each $size, $val in $borderSize {
+			@if $loc != null {
+				@if $size != null{
+					.border-sm-#{$loc}-#{$size} {
+						border-style: solid;
+						border-#{$loc}-width: #{$val};
+					}
+				} @else {
+					.border-sm-#{$loc}{
+						border-style: solid;
+						border-#{$loc}-width: #{$val};
+					}
+				}
+			} @else {
+				@if $size != null {
+					.border-sm-#{$size}{
+						border-style: solid;
+						border-width: #{$val};
+					}
+				} @else {
+					.border-sm{
+						border-style: solid;
+						border-width: #{$val};
+					}
+				}
+			}
+		}
+	}
+}

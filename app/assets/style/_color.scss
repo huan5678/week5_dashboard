@@ -1,0 +1,32 @@
+
+@each $theme, $color in $grays{
+  .text-gray-#{$theme}{
+    color: #{$color};
+  };
+  .bg-gray-#{$theme}{
+    background-color: #{$color};
+  }
+
+  .text-gray-#{$theme}-hover:hover{
+    color: #{$color};
+  };
+  .bg-gray-#{$theme}-hover:hover{
+    background-color: #{$color};
+  }
+};
+
+@each $theme, $color in $themes{
+  .text-#{$theme}{
+    color: #{$color};
+  };
+  .bg-#{$theme}{
+    background-color: #{$color};
+  }
+
+  .text-#{$theme}-hover:hover{
+    color: #{$color};
+  };
+  .bg-#{$theme}-hover:hover{
+    background-color: #{$color};
+  }
+};

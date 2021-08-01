@@ -1,0 +1,24 @@
+
+@each $size, $sizeamount in $sizes{
+  .fs-#{$size}{
+    font-size: $sizeamount !important;
+  }
+}
+
+@each $fw, $val in $weightVal {
+  .fw-#{$fw}{
+    font-weight: #{$val};
+  }
+}
+
+@each $loc in $textAlign {
+  .text-#{$loc}{
+    text-align: #{$loc};
+  }
+}
+
+@each $ws in $whiteSpace {
+  .whitespace-#{$ws}{
+    white-space: #{$ws};
+  }
+}

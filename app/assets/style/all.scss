@@ -1,23 +1,18 @@
-$color: #00cc99;
+@import
+    //重置 變數
+    "base/variables",
+    "base/base",
+    "base/helper",
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+    //通用與元件類別
+    "space",
+    "typographic",
+    "color",
+    "grid",
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+    //頁面單獨設定
+    "layout",
+    "assignment",
+    "admin"
+    ;
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}

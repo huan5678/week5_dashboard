@@ -1,0 +1,50 @@
+@each  $space, $spaceamount in $spacers {
+  .mx-#{$space} {
+    margin-right: #{$spaceamount} !important;
+    margin-left: #{$spaceamount} !important;
+  }
+  .my-#{$space} {
+    margin-top: #{$spaceamount} !important;
+    margin-bottom: #{$spaceamount} !important;
+  }
+  .px-#{$space} {
+    padding-right: #{$spaceamount} !important;
+    padding-left: #{$spaceamount} !important;
+  }
+  .py-#{$space} {
+    padding-top: #{$spaceamount} !important;
+    padding-bottom: #{$spaceamount} !important;
+  }
+}
+
+@each  $space, $spaceamount in $spacers {
+ @each $val, $side in $sides {
+   @if $side != null{
+     .m#{$val}-#{$space} {
+       margin-#{$side}: #{$spaceamount} !important;
+     }
+     .p#{$val}-#{$space} {
+       padding-#{$side}: #{$spaceamount} !important;
+     }
+   } @else {
+      .m-#{$space} {
+        margin: #{$spaceamount} !important;
+      }
+      .p-#{$space} {
+        padding: #{$spaceamount} !important;
+      }
+   }
+  }
+}
+
+@each $width, $val in $widthVal {
+  .w-#{$width}{
+    width: #{$val} !important;
+  }
+}
+
+@each $posit in $pos {
+  .pos-#{$posit}{
+    position: #{$posit} !important;
+  }
+}

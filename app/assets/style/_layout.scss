@@ -1,0 +1,19 @@
+.activated::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  background-color: $main;
+}
+
+.sidebar {
+  max-width: 296px;
+  width: 100%;
+}
+
+.content {
+  max-width: 984px;
+  width: 100%;
+}
